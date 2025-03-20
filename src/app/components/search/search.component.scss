@@ -1,0 +1,38 @@
+@use "../../../styles/mixins";
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  @include mixins.border-default;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  right: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  @include mixins.border-default;
+}
+
+.mat-mdc-option {
+  background-color: white !important;
+}
+
+.mat-mdc-option:hover {
+  background-color: #f0f0f0 !important;
+}

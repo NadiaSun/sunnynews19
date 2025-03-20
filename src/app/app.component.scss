@@ -1,0 +1,13 @@
+.news-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.categories {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
