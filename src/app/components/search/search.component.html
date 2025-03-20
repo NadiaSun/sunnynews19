@@ -1,0 +1,12 @@
+<input
+  type="text"
+  placeholder="Search for a street"
+  [matAutocomplete]="auto"
+  [(ngModel)]="search"
+/>
+<mat-autocomplete class="suggestions" #auto="matAutocomplete">
+  @for (category of categoriesFilter(); track category) {
+  <mat-option [value]="category">{{ category }}</mat-option>
+  }
+</mat-autocomplete>
+<button class="btn green">Search</button>

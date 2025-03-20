@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SearchComponent } from './components/search/search.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { NewsItemComponent } from './components/news-item/news-item.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    SearchComponent,
+    ToolbarComponent,
+    NewsItemComponent,
+    CategoriesComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'sunnynews19';
